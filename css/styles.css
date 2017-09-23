@@ -28,6 +28,18 @@
   margin-left: auto;
 }
 
+h1 {
+    border: none;
+}
+
+h3 {
+  border: 1px dashed greenyellow;
+}
+
+h6 {
+    border: 2px groove mediumpurple;
+}
+
 input[type='submit'], button, [aria-label] {
     cursor: pointer;
 }
@@ -35,3 +47,20 @@ input[type='submit'], button, [aria-label] {
 #spoiler {
     display: none
 }
+
+
+body {
+  margin: 0 auto;
+  width: 960px;
+}
+
+table, th {
+   border: 1px solid black;
+}
+
+.tb {
+    padding: 20px;
+    margin: 10px;
+}
+
+
