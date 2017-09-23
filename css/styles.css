@@ -1,5 +1,37 @@
-h1 {
-    width: 50%;
-    padding: 10px;
-    text-align: center;
+.fancy{
+  overflow: hidden;
+  text-align: center;
+}
+
+.fancy span{
+  position: relative;
+}
+
+.fancy span:before,
+.fancy span:after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: .4em;
+  border-top: 1px solid blue;
+  border-bottom: 1px solid crimson;
+  width: 200em;
+}
+
+.fancy span:before {
+  right: 100%;
+  margin-right: auto;
+}
+
+.fancy span:after {
+  left: 100%;
+  margin-left: auto;
+}
+
+input[type='submit'], button, [aria-label] {
+    cursor: pointer;
+}
+
+#spoiler {
+    display: none
 }

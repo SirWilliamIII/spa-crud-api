@@ -6,19 +6,28 @@
     <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-    <h1>This is a counter</h1>
+       <h1 class="fancy"><span>CRUD'in all over the World</span></h1>
+       <h3 class="fancy"><span>...with a fancy subtitle</span></h3>
+       <br><br>
+
+       <div id="spoiler" role="aria-hidden">
+           <form action="javascript:void(0);" method="POST" id="saveEdit">
+               <input type="text" id="edit-name" />
+               <input type="submit" value="Edit" />
+               <a onclick="CloseInput()" aria-label="Close" href="">
+                   &#10006;
+               </a>
+           </form>
+       </div>
 
     <p id="counter">
-
-    <table>
-        <tr>
-            <th></th>
-        </tr>
-        <tbody id="countries">
-
-        </tbody>
-    </table>
-
+        <table>
+            <tr>
+                <th>Name</th>
+            </tr>
+            <tbody id="countries">
+            </tbody>
+        </table>
     </p>
     <script src="js/scripts.js"></script>
 </body>
